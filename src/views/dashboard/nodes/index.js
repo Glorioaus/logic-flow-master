@@ -1,6 +1,5 @@
 
-import registerStart from './registerStart'
-import registerEnd from './registerEnd'
-import registerTask from './registerTask'
+import central from './centralCpu'
+import registerCpu from './registerCpu'
 
-export { registerStart, registerEnd, registerTask }
+export { central, registerCpu }
