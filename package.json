@@ -14,8 +14,8 @@
     "test:ci": "npm run lint && npm run test:unit"
   },
   "dependencies": {
-    "@logicflow/core": "^1.2.1",
-    "@logicflow/extension": "^1.2.1",
+    "@logicflow/core": "^1.2.3",
+    "@logicflow/extension": "^1.2.3",
     "@smallwei/avue": "^2.10.1",
     "axios": "0.18.1",
     "core-js": "^3.22.8",

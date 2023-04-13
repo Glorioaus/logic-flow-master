@@ -30,11 +30,32 @@ export default function registerEnd(lf) {
         )
       }
       getShape() {
+        const { model } = this.props
+        const {
+          x,
+          y,
+          r,
+          fill,
+          stroke,
+          strokeWidth
+        } = model
         return h(
           'g',
           {
           },
           [
+            (
+              'circle',
+              {
+                cx: x,
+                cy: y,
+                r,
+                fill,
+                stroke,
+                strokeWidth,
+                fillOpacity: 0
+              }
+            ),
             this.getIconShape()
           ]
         )
@@ -43,12 +64,12 @@ export default function registerEnd(lf) {
     class EndModel extends CircleNodeModel {
       initNodeData(data) {
         data.text = {
-          value: (data.text && data.text.value) || '',
+          value: (data.text && data.text.value) || '通用处理器',
           x: data.x,
           y: data.y + 35
         }
         super.initNodeData(data)
-        // this.r = 35
+        this.r = 20
       }
       // 自定义锚点样式
       getAnchorStyle() {

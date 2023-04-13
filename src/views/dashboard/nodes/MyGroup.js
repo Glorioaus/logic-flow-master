@@ -4,6 +4,15 @@ import { GroupNode } from '@logicflow/extension'
 class MyGroup extends GroupNode.view {}
 
 class MyGroupModel extends GroupNode.model {
+  constructor(data, graphModel) {
+    data.text = {
+      value: (data.text && data.text.value) || '工序节点',
+      x: data.x,
+      y: data.y - 70
+    }
+    super(data, graphModel)
+    this.r = 20
+  }
   initNodeData(data) {
     super.initNodeData(data)
     this.isRestrict = true // 子节点是否被禁止通过拖拽移出分组。 默认false，允许拖拽移除分组。

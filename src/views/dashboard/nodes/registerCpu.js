@@ -51,7 +51,8 @@ export default function registerFamen(lf) {
                 r,
                 fill,
                 stroke,
-                strokeWidth
+                strokeWidth,
+                fillOpacity: 0
               }
             ),
             this.getIconShape()
@@ -67,6 +68,7 @@ export default function registerFamen(lf) {
           y: data.y + 35
         }
         super(data, graphModel)
+        this.r = 20
       }
     }
     return {

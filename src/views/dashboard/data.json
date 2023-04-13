@@ -1,0 +1,371 @@
+{
+    "nodes": [
+        {
+            "id": "8e12814a-91c3-47ab-951b-29cef18f2ac6",
+            "type": "special-cpu",
+            "x": 240,
+            "y": 280,
+            "properties": {},
+            "text": {
+                "x": 240,
+                "y": 315,
+                "value": "上料"
+            }
+        },
+        {
+            "id": "f1c67e0e-00ce-4670-8906-9902b3302f52",
+            "type": "central-cpu",
+            "x": 340,
+            "y": 280,
+            "properties": {
+                "disabled": true
+            },
+            "text": {
+                "x": 340,
+                "y": 315,
+                "value": "通用处理器"
+            }
+        },
+        {
+            "id": "38818b38-8f8c-4254-8ba7-e050f17ea7eb",
+            "type": "my-group",
+            "x": 340,
+            "y": 290,
+            "properties": {},
+            "text": {
+                "x": 340,
+                "y": 220,
+                "value": "冲洗"
+            },
+            "children": [
+                "8e12814a-91c3-47ab-951b-29cef18f2ac6",
+                "3d6a451a-a3b1-404a-8bb0-0fc9d926ae0c",
+                "f1c67e0e-00ce-4670-8906-9902b3302f52"
+            ]
+        },
+        {
+            "id": "3d6a451a-a3b1-404a-8bb0-0fc9d926ae0c",
+            "type": "special-cpu",
+            "x": 440,
+            "y": 280,
+            "properties": {},
+            "text": {
+                "x": 440,
+                "y": 315,
+                "value": "清洗"
+            }
+        },
+        {
+            "id": "d1d41399-fa3f-4534-a233-d1d49dd52ac8",
+            "type": "my-group",
+            "x": 740,
+            "y": 290,
+            "properties": {},
+            "text": {
+                "x": 740,
+                "y": 220,
+                "value": "镀膜"
+            },
+            "children": [
+                "35e05e2e-fc2d-4e6a-9cf7-bac27fb89a9e",
+                "03df58b8-573f-4099-a727-c0d958a77d3d",
+                "2e866fde-fdab-4b37-9e34-9723621c570a"
+            ]
+        },
+        {
+            "id": "c07bf9ad-16e0-466b-a7bf-6dcc7ce7fc6a",
+            "type": "my-group",
+            "x": 1160,
+            "y": 290,
+            "properties": {},
+            "text": {
+                "x": 1160,
+                "y": 220,
+                "value": "淬火"
+            },
+            "children": [
+                "30969e02-17a6-471d-a09c-6af69735d3df",
+                "da84b183-ab08-4066-9c7d-5b6201357665",
+                "1dce0e9c-6b0b-40ff-ae26-d303e1f289f6"
+            ]
+        },
+        {
+            "id": "35e05e2e-fc2d-4e6a-9cf7-bac27fb89a9e",
+            "type": "central-cpu",
+            "x": 750,
+            "y": 280,
+            "properties": {
+                "disabled": true
+            },
+            "text": {
+                "x": 750,
+                "y": 315,
+                "value": "通用处理器"
+            }
+        },
+        {
+            "id": "2e866fde-fdab-4b37-9e34-9723621c570a",
+            "type": "special-cpu",
+            "x": 640,
+            "y": 280,
+            "properties": {},
+            "text": {
+                "x": 640,
+                "y": 315,
+                "value": "上料"
+            }
+        },
+        {
+            "id": "03df58b8-573f-4099-a727-c0d958a77d3d",
+            "type": "special-cpu",
+            "x": 850,
+            "y": 280,
+            "properties": {},
+            "text": {
+                "x": 850,
+                "y": 315,
+                "value": "冲压"
+            }
+        },
+        {
+            "id": "30969e02-17a6-471d-a09c-6af69735d3df",
+            "type": "central-cpu",
+            "x": 1160,
+            "y": 280,
+            "properties": {
+                "disabled": true
+            },
+            "text": {
+                "x": 1160,
+                "y": 315,
+                "value": "通用处理器"
+            }
+        },
+        {
+            "id": "da84b183-ab08-4066-9c7d-5b6201357665",
+            "type": "special-cpu",
+            "x": 1060,
+            "y": 280,
+            "properties": {},
+            "text": {
+                "x": 1060,
+                "y": 315,
+                "value": "加热"
+            }
+        },
+        {
+            "id": "1dce0e9c-6b0b-40ff-ae26-d303e1f289f6",
+            "type": "special-cpu",
+            "x": 1260,
+            "y": 280,
+            "properties": {},
+            "text": {
+                "x": 1260,
+                "y": 315,
+                "value": "定型"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "d899156d-6717-481c-941c-a19fd2b00e52",
+            "type": "polyline",
+            "sourceNodeId": "8e12814a-91c3-47ab-951b-29cef18f2ac6",
+            "targetNodeId": "f1c67e0e-00ce-4670-8906-9902b3302f52",
+            "startPoint": {
+                "x": 260,
+                "y": 280
+            },
+            "endPoint": {
+                "x": 320,
+                "y": 280
+            },
+            "properties": {},
+            "pointsList": [
+                {
+                    "x": 260,
+                    "y": 280
+                },
+                {
+                    "x": 320,
+                    "y": 280
+                }
+            ]
+        },
+        {
+            "id": "56341527-e6a4-4f2f-98d4-30207da68eed",
+            "type": "polyline",
+            "sourceNodeId": "f1c67e0e-00ce-4670-8906-9902b3302f52",
+            "targetNodeId": "3d6a451a-a3b1-404a-8bb0-0fc9d926ae0c",
+            "startPoint": {
+                "x": 360,
+                "y": 280
+            },
+            "endPoint": {
+                "x": 420,
+                "y": 280
+            },
+            "properties": {},
+            "pointsList": [
+                {
+                    "x": 360,
+                    "y": 280
+                },
+                {
+                    "x": 420,
+                    "y": 280
+                }
+            ]
+        },
+        {
+            "id": "12381920-fee0-4d24-bc75-2847bbb5c132",
+            "type": "polyline",
+            "sourceNodeId": "38818b38-8f8c-4254-8ba7-e050f17ea7eb",
+            "targetNodeId": "d1d41399-fa3f-4534-a233-d1d49dd52ac8",
+            "startPoint": {
+                "x": 490,
+                "y": 290
+            },
+            "endPoint": {
+                "x": 590,
+                "y": 290
+            },
+            "properties": {},
+            "pointsList": [
+                {
+                    "x": 490,
+                    "y": 290
+                },
+                {
+                    "x": 590,
+                    "y": 290
+                }
+            ]
+        },
+        {
+            "id": "69deda9f-19f8-4136-9f8b-947b6e4ed3e1",
+            "type": "polyline",
+            "sourceNodeId": "d1d41399-fa3f-4534-a233-d1d49dd52ac8",
+            "targetNodeId": "c07bf9ad-16e0-466b-a7bf-6dcc7ce7fc6a",
+            "startPoint": {
+                "x": 890,
+                "y": 290
+            },
+            "endPoint": {
+                "x": 1010,
+                "y": 290
+            },
+            "properties": {},
+            "pointsList": [
+                {
+                    "x": 890,
+                    "y": 290
+                },
+                {
+                    "x": 1010,
+                    "y": 290
+                }
+            ]
+        },
+        {
+            "id": "4bdb77aa-8acf-4b53-b8b6-018b28487f0f",
+            "type": "polyline",
+            "sourceNodeId": "2e866fde-fdab-4b37-9e34-9723621c570a",
+            "targetNodeId": "35e05e2e-fc2d-4e6a-9cf7-bac27fb89a9e",
+            "startPoint": {
+                "x": 660,
+                "y": 280
+            },
+            "endPoint": {
+                "x": 730,
+                "y": 280
+            },
+            "properties": {},
+            "pointsList": [
+                {
+                    "x": 660,
+                    "y": 280
+                },
+                {
+                    "x": 730,
+                    "y": 280
+                }
+            ]
+        },
+        {
+            "id": "71e35f3b-cbc7-47ef-b5f1-48c020e34736",
+            "type": "polyline",
+            "sourceNodeId": "35e05e2e-fc2d-4e6a-9cf7-bac27fb89a9e",
+            "targetNodeId": "03df58b8-573f-4099-a727-c0d958a77d3d",
+            "startPoint": {
+                "x": 770,
+                "y": 280
+            },
+            "endPoint": {
+                "x": 830,
+                "y": 280
+            },
+            "properties": {},
+            "pointsList": [
+                {
+                    "x": 770,
+                    "y": 280
+                },
+                {
+                    "x": 830,
+                    "y": 280
+                }
+            ]
+        },
+        {
+            "id": "d0a4f9ef-9d85-4193-ad56-c162b519b530",
+            "type": "polyline",
+            "sourceNodeId": "da84b183-ab08-4066-9c7d-5b6201357665",
+            "targetNodeId": "30969e02-17a6-471d-a09c-6af69735d3df",
+            "startPoint": {
+                "x": 1080,
+                "y": 280
+            },
+            "endPoint": {
+                "x": 1140,
+                "y": 280
+            },
+            "properties": {},
+            "pointsList": [
+                {
+                    "x": 1080,
+                    "y": 280
+                },
+                {
+                    "x": 1140,
+                    "y": 280
+                }
+            ]
+        },
+        {
+            "id": "92fcd2c7-dd87-42db-90af-d051ac2f4cc6",
+            "type": "polyline",
+            "sourceNodeId": "30969e02-17a6-471d-a09c-6af69735d3df",
+            "targetNodeId": "1dce0e9c-6b0b-40ff-ae26-d303e1f289f6",
+            "startPoint": {
+                "x": 1180,
+                "y": 280
+            },
+            "endPoint": {
+                "x": 1240,
+                "y": 280
+            },
+            "properties": {},
+            "pointsList": [
+                {
+                    "x": 1180,
+                    "y": 280
+                },
+                {
+                    "x": 1240,
+                    "y": 280
+                }
+            ]
+        }
+    ]
+}
